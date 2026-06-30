@@ -2060,7 +2060,7 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 13. FOOTER                                                     -->
+    <!-- 13. FOOTER                                                  -->
     <!-- ═══════════════════════════════════════════════════════════ -->
     <footer>
       <div class="container">
@@ -2148,13 +2148,6 @@
         { threshold: 0.12 },
       );
       reveals.forEach((r) => observer.observe(r));
-
-      /* Sticky nav shadow on scroll */
-      window.addEventListener("scroll", () => {
-        const nav = document.getElementById("nav");
-        nav.style.background =
-          window.scrollY > 20 ? "rgba(10,22,40,0.97)" : "rgba(10,22,40,0.85)";
-      });
 
       /* Count-up animation for stat numbers */
       function animateCountUp(el) {
